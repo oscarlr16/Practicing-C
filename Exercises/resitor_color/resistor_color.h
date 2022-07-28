@@ -8,5 +8,5 @@ typedef enum {
 } resistor_band_t;
 
 #endif
-int color_code(resistor_band_t color);
-const resistor_band_t *colors(void);
+int color_code(resistor_band_t color); 
+const resistor_band_t *colors(void); //This fuction resturns a pointer
