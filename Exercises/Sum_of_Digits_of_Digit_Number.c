@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n, aux, sum;
+    int n, aux, sum=0;
     printf("Ingrese un numero de 5 digitos: \n");
     scanf("%d", &n);
     aux = n * 10;
