@@ -1,32 +1,23 @@
 #include<stdio.h>
 
-int itera(int num);
-//void compa(int iter);
+void combinations(int num);
 
 void main(void){
-    int num=NULL,iter=NULL;
+    int num=NULL;
     printf("Ingrese un numero: \n");
     scanf("%d",&num);
-    iter = itera(num-1)-1;
-
-//    compa(iter);
+    combinations(num);
 }
 
-int itera(int num){
-    if(num == 0){
-        return 1;
-    }
-    else{
-        return(num+itera(num-1));
-    }
-}
-/*
-void compa(int iter){
+
+
+void combinations(int num){
     int a=0;
-    for (int i = 0; i < iter; i++)
+    for (int i = 1; i <= num; i++)
     {
-        for(int j = iter-i; j>0;j--){
-            printf("%d\n",j);
+        for(int j = num-i; j>0;j--){
+            printf("%d\t",j);
+            printf("%d\n",j+i);
         }
     }
-}*/
+}
